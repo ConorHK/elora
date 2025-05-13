@@ -31,13 +31,6 @@ enum layers {
 #define HOME_I RSFT_T(KC_I)
 #define HOME_O LALT_T(KC_O)
 
-#define MOUSEKEY_DELAY 0
-#define MOUSEKEY_MAX_SPEED 7
-#define MOUSEKEY_TIME_TO_MAX 60
-#define MOUSEKEY_INTERVAL 16
-#define MOUSEKEY_WHEEL_DELAY 0
-#define MK_COMBINED
-
 // clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -204,7 +197,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       _______, _______, _______, _______, _______, _______,                                     _______, _______, _______, _______, _______, _______,
       _______, _______, _______, _______, _______, _______,                                     _______, _______, _______, _______, _______, _______,
       _______, _______, _______, _______,KC_MS_UP, _______,                                     _______, _______, _______, _______, _______, _______,
-      _______, _____, _______,KC_MS_LEFT,KC_MS_DOWN,KC_MS_RIGHT, _______, _______, _______, _______, _______, _______, _____, _____, ______, _______,
+      _______, _______, _______,KC_MS_LEFT,KC_MS_DOWN,KC_MS_RIGHT, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
                                  _______, _______, _______, KC_ACL2, _______, _______, KC_BTN1, KC_BTN2, MOUSE, _______,
      _______, _______,  _______, _______, _______,                                                       _______, _______, _______, _______, _______
     ),
@@ -247,6 +240,5 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
     [3] = { ENCODER_CCW_CW(_______, _______),  ENCODER_CCW_CW(_______, _______),  ENCODER_CCW_CW(_______, _______),  ENCODER_CCW_CW(_______, _______)  },
     [4] = { ENCODER_CCW_CW(_______, _______),  ENCODER_CCW_CW(_______, _______),  ENCODER_CCW_CW(_______, _______),  ENCODER_CCW_CW(_______, _______)  },
     [5] = { ENCODER_CCW_CW(_______, _______),  ENCODER_CCW_CW(_______, _______),  ENCODER_CCW_CW(_______, _______),  ENCODER_CCW_CW(_______, _______)  },
-    [6] = { ENCODER_CCW_CW(_______, _______),  ENCODER_CCW_CW(_______, _______),  ENCODER_CCW_CW(_______, _______),  ENCODER_CCW_CW(_______, _______)  },
 };
 #endif
