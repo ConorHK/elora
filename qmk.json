@@ -5,9 +5,16 @@
             "splitkb/halcyon/elora/rev2",
             "default",
             {
-                "TARGET": "default",
                 "HLC_ENCODER": "1",
-                "HLC_TFT_DISPLAY": "1"
+                "TARGET": "left"
+            }
+        ],
+        [
+            "splitkb/halcyon/elora/rev2",
+            "default",
+            {
+                "HLC_TFT_DISPLAY": "1",
+                "TARGET": "right"
             }
         ]
     ]
