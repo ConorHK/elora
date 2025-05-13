@@ -6,8 +6,8 @@
             "default",
             {
                 "TARGET": "default",
-                "hlc_encoder": "1",
-                "hlc_tft_display": "1"
+                "HLC_ENCODER": "1",
+                "HLC_TFT_DISPLAY": "1"
             }
         ]
     ]
