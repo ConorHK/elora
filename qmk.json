@@ -1,4 +1,14 @@
 {
     "userspace_version": "1.1",
-    "build_targets": []
+    "build_targets": [
+        [
+            "splitkb/elora/rev1",
+            "default",
+            {
+                "TARGET": "default",
+                "hlc_encoder": "1",
+                "hlc_tft_display": "1"
+            }
+        ]
+    ]
 }
