@@ -3,6 +3,8 @@
 
 #pragma once
 
+#include QMK_KEYBOARD_H
+
 typedef enum module {
     none,
     hlc_none,
