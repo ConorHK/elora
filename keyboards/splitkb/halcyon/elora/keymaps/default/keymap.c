@@ -44,7 +44,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
  * |Ctrl/Esc|   A  |   R  |   S  |   T  |   G  |                              |   M  |   N  |   E  |   I  |   O  |  ' "   |
  * |--------+------+------+------+------+------+-------------.  ,-------------+------+------+------+------+------+--------|
- * |Macro R |   Z  |   X  |   C  |   D  |   V  | Copy |CapsLk|  |F-keys| Paste|   K  |   H  | ,  < | . >  | /  ? |Macro P |
+ * |        |   Z  |   X  |   C  |   D  |   V  | Copy |CapsLk|  |F-keys| Paste|   K  |   H  | ,  < | . >  | /  ? | TODO   |
  * `----------------------+------+------+------+------+------|  |------+------+------+------+------+----------------------'
  *                        |Adjust| TODO | Enter| Space| Nav  |  | Sym  | Space| Enter| Mouse| Menu |
  *                        |      |      |      |      |      |  |      |      |      |      |      |
@@ -57,7 +57,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      KC_ESC  , KC_1 ,  KC_2   ,  KC_3  ,   KC_4 ,   KC_5 ,                                        KC_6 ,  KC_7 ,  KC_8 ,   KC_9 ,  KC_0 , KC_BSPC ,
      KC_TAB  , KC_Q ,  KC_W   ,  KC_F  ,   KC_P ,   KC_B ,                                        KC_J,   KC_L ,  KC_U ,   KC_Y ,KC_SCLN, KC_BSPC,
      KC_ESC ,HOME_A , HOME_R  , HOME_S ,  HOME_T,   KC_G ,                                        KC_M,  HOME_N, HOME_E,  HOME_I, HOME_O, KC_QUOT ,
-     DM_REC1, KC_Z  ,  KC_X   ,  KC_C  ,   KC_D ,   KC_V , KC_COPY,KC_CAPS,     FKEYS  ,KC_PASTE, KC_K,   KC_H ,KC_COMM, KC_DOT ,KC_SLSH, DM_PLY1,
+     _______, KC_Z  ,  KC_X   ,  KC_C  ,   KC_D ,   KC_V , KC_COPY,KC_CAPS,     FKEYS  ,KC_PASTE, KC_K,   KC_H ,KC_COMM, KC_DOT ,KC_SLSH, KC_RSFT,
                                  ADJUST, KC_LGUI,  KC_ENT, KC_SPC , NAV   ,     SYM    , KC_SPC ,KC_ENT , MOUSE  , KC_APP,
      KC_MUTE, KC_NO,  KC_NO, KC_NO, KC_NO,                                                                KC_MUTE, KC_NO, KC_NO, KC_NO, KC_NO
     ),
