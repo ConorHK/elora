@@ -224,6 +224,15 @@ const uint16_t right_halcyon_buttons[10][5] = {
 };
 #endif
 
+// Thumb keys count as either hand so home row mods chord with layer keys.
+const char chordal_hold_layout[MATRIX_ROWS][MATRIX_COLS] PROGMEM = LAYOUT(
+    'L', 'L', 'L', 'L', 'L', 'L',                     'R', 'R', 'R', 'R', 'R', 'R',
+    'L', 'L', 'L', 'L', 'L', 'L',                     'R', 'R', 'R', 'R', 'R', 'R',
+    'L', 'L', 'L', 'L', 'L', 'L',                     'R', 'R', 'R', 'R', 'R', 'R',
+    'L', 'L', 'L', 'L', 'L', 'L', 'L', 'L', 'R', 'R', 'R', 'R', 'R', 'R', 'R', 'R',
+                   '*', '*', '*', '*', '*', '*', '*', '*', '*', '*'
+);
+
 uint16_t get_flow_tap_term(uint16_t keycode, keyrecord_t *record, uint16_t prev_keycode) {
     if (!is_flow_tap_key(keycode) || !is_flow_tap_key(prev_keycode)) {
         return 0;
