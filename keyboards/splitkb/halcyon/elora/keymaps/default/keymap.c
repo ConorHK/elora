@@ -224,6 +224,21 @@ const uint16_t right_halcyon_buttons[10][5] = {
 };
 #endif
 
+uint16_t get_flow_tap_term(uint16_t keycode, keyrecord_t *record, uint16_t prev_keycode) {
+    if (!is_flow_tap_key(keycode) || !is_flow_tap_key(prev_keycode)) {
+        return 0;
+    }
+    switch (keycode) {
+        // Ctrl and Shift shortcuts often follow typing straight away.
+        case HOME_S:
+        case HOME_E:
+        case HOME_R:
+        case HOME_I:
+            return 0;
+    }
+    return FLOW_TAP_TERM;
+}
+
 #if defined(ENCODER_ENABLE)
 bool encoder_update_user(uint8_t index, bool clockwise) {
     if (get_mods() & MOD_MASK_SHIFT) {
