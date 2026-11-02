@@ -227,9 +227,9 @@ const uint16_t right_halcyon_buttons[10][5] = {
 #if defined(ENCODER_ENABLE)
 bool encoder_update_user(uint8_t index, bool clockwise) {
     if (get_mods() & MOD_MASK_SHIFT) {
-        tap_code(clockwise ? MS_WHLR : MS_WHLL);
+        tap_code(clockwise ? MS_WHLL : MS_WHLR);
     } else {
-        tap_code(clockwise ? MS_WHLU : MS_WHLD);
+        tap_code(clockwise ? MS_WHLD : MS_WHLU);
     }
     // Skip the keyboard default of volume and page keys.
     return false;
