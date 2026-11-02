@@ -238,11 +238,13 @@ uint16_t get_flow_tap_term(uint16_t keycode, keyrecord_t *record, uint16_t prev_
         return 0;
     }
     switch (keycode) {
-        // Ctrl and Shift shortcuts often follow typing straight away.
+        // Ctrl, Shift and GUI shortcuts often follow typing straight away.
         case HOME_S:
         case HOME_E:
         case HOME_R:
         case HOME_I:
+        case HOME_T:
+        case HOME_N:
             return 0;
     }
     return FLOW_TAP_TERM;
